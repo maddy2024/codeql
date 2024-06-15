@@ -5,3 +5,6 @@ author: githubtraining
 runs:
   using: node12
   main: "dist/index.js"
+- uses: github/codeql-action/init@v3
+  with:
+    config-file: ./.github/codeql/codeql-config.yml
